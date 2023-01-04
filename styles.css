@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: grid;
+}
+
+header {
+    background-color: green;
+    border: 1px solid yellow;
+}
+
+#sidebar {
+    background-color: blue;
+    border: 1px solid yellow;
+
+}
+
+section {
+    background-color: palevioletred;
+    border: 1px solid yellow;
+
+}
+
+article {
+    background-color: orangered;
+    border: 1px solid yellow;
+
 }
