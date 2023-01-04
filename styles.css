@@ -4,29 +4,41 @@
     font-family: 'Roboto', sans-serif;
 }
 
-main {
+#containerDiv {
     display: grid;
 }
 
-header {
-    background-color: green;
+#header-container {
+    display: grid;
+
+    background-color: lightsalmon;
     border: 1px solid yellow;
 }
 
-#sidebar {
-    background-color: blue;
+#sidebar-container {
+    display: grid;
+
+    background-color: lightskyblue;
+    border: 1px solid yellow;
+
+}
+
+#main-section-container {
+    display: grid;
+
+    background-color: lightslategray;
     border: 1px solid yellow;
 
 }
 
 section {
-    background-color: palevioletred;
+    background-color: lightseagreen;
     border: 1px solid yellow;
 
 }
 
 article {
-    background-color: orangered;
+    background-color: lightgreen;
     border: 1px solid yellow;
 
 }
