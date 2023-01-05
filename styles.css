@@ -9,7 +9,7 @@
 
 #containerGrid {
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 2fr 8fr;
 
   
 }
@@ -34,10 +34,19 @@
 #main-section-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    gap: 15px;
 
     background-color: lightslategray;
     border: 1px solid black;
 
+}
+
+.project-section-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
 section {
@@ -50,4 +59,18 @@ article {
     background-color: lightgreen;
     border: 1px solid black;
 
+}
+
+.announcements-section-wrapper {
+    padding: 3px;
+}
+
+.announcements-content p {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.contact-wrapper {
+    background-color: white;
+    border: 1px solid black; 
 }
