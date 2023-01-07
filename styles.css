@@ -65,3 +65,29 @@ body {
     display: flex;
     gap: 20px;
 }
+
+input:not(:focus):placeholder-shown {
+    background-image: url(Media/Icons/search.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+}
+  input, input:focus, input:focus:not(:placeholder-shown) {
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 10px 20px;
+    transition: width 0.3s;
+    width: 250px;
+}
+
+.border {
+    background-color: rgb(219, 221, 231);
+    height: 100%;
+    width: 1px;
+}
