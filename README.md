@@ -4,7 +4,6 @@ Admin dashboard for the Odin project.
 ## Built with
 - HTML
 * CSS
-+ JS
 
 ## Tools
 - Visual Studio Code
@@ -15,8 +14,7 @@ Admin dashboard for the Odin project.
 - Google Images
 
 ## Outcome
- - Improved usage of CSS Flex properties, specially object positioning while using images.
- - Additional password match validation with the use of JavaScript.
+ - Deepened knowledge of CSS Grid properties.
  
  ## Live preview [here](https://bonemuffin.github.io/PROJECT.admin-dashboard/index.html)
 ![](./Media/preview.png)
