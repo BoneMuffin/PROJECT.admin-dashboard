@@ -130,3 +130,14 @@ input:not(:focus):placeholder-shown {
 }
 
 /* SIDEBAR */
+
+#sidebar {
+    background-color: rgb(26, 26, 33);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+    display: grid;
+    grid-area: 1 / 1 / 4 / 2;
+    grid-auto-rows: max-content;
+    grid-template: max-content / max-content;
+    padding: 30px;
+    row-gap: 25px;
+}
