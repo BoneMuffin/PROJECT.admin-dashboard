@@ -15,6 +15,7 @@ Admin dashboard for the Odin project.
 
 ## Outcome
  - Deepened knowledge of CSS Grid properties.
+
  
 ## Live preview [here](https://bonemuffin.github.io/PROJECT.admin-dashboard/index.html)
 ![](./Media/preview.png)
