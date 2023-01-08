@@ -21,14 +21,69 @@ body {
     font-size: 16px;
 }
 
-.main-grid {
-    display: grid;
-    gap: 20px;
-    grid-template: max-content calc(100vh) / max-content minxmax(600px, 1fr);
-    padding-right: 20px;
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-text);
+    margin-bottom: 10px;
+}
+  
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
-/* BEGIN OF NAVBAR */
+p {
+    margin-bottom: 10px;
+}
+
+p, 
+p a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light-grey);
+  line-height: 1.4;
+}
+
+::placeholder {
+    color: var(--light-grey);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    opacity: 0;
+}
+  
+input:not(:focus):placeholder-shown {
+    background-image: url(Media/Icons/search.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+}
+  input, 
+  input:focus, 
+  input:focus:not(:placeholder-shown) {
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 10px 20px;
+    transition: width 0.3s;
+    width: 250px;
+}
+
+.mainGrid {
+    display: grid;
+    gap: 20px;
+    grid-template: max-content calc(100vh) / max-content minmax(600px, 1fr);    padding-right: 20px;
+}
+
+/* NAVBAR */
 
 .top-navbar {
     grid-area: 1 / 2 / 2 / 4;
@@ -57,7 +112,9 @@ body {
     list-style-type: none;
 }
 
-.navbar-links a, .navbar-links a:hover, .navbar-links a:visited {
+.navbar-links a,
+.navbar-links a:hover,
+.navbar-links a:visited {
     color: var(--light-grey);
     text-decoration: none;
 }
@@ -70,26 +127,6 @@ body {
     align-items: center;
     display: flex;
     gap: 20px;
-}
-
-input:not(:focus):placeholder-shown {
-    background-image: url(Media/Icons/search.png);
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    border-radius: 30px;
-    height: 40px;
-    width: 40px;
-}
-  input, input:focus, input:focus:not(:placeholder-shown) {
-    background-color: rgb(0, 0, 0);
-    border-radius: 30px;
-    border: none;
-    color: white;
-    outline: none;
-    padding: 10px 20px;
-    transition: width 0.3s;
-    width: 250px;
 }
 
 .border {
@@ -131,7 +168,7 @@ input:not(:focus):placeholder-shown {
 
 /* SIDEBAR */
 
-#sidebar {
+.sidebar {
     background-color: rgb(26, 26, 33);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
     display: grid;
@@ -154,7 +191,7 @@ input:not(:focus):placeholder-shown {
     background-color: white;
 }
 
-#sidebar a {
+.sidebar a {
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 18px 18px;
@@ -165,6 +202,7 @@ input:not(:focus):placeholder-shown {
 
 
 /* MAIN CONTENT */
+
 .main-content {
     display: grid;
     gap: 20px;
@@ -199,6 +237,12 @@ input:not(:focus):placeholder-shown {
     transition: all 0.4s;
 }
 
+.project-card:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s;
+    outline: 2px solid rgba(0, 0, 0, 0.14);
+}
+
 .project-image {
     background-position: center;
     background-repeat: no-repeat;
@@ -207,24 +251,6 @@ input:not(:focus):placeholder-shown {
     height: 80px;
     margin-bottom: 20px;
     overflow: hidden;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--dark-grey);
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-p, p a {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--light-grey);
-  line-height: 1.4;
 }
 
 .card-controls {
@@ -248,5 +274,47 @@ p, p a {
 }
 
 #news-and-trending {
-    
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: max-content;
+    grid-template-columns: 1fr;
+}
+
+.section-title {
+    color: var(--dark-grey);
+    font-size: 22px;
+    font-weight: 400;
+    grid-column: 1 / -1;
+    margin: 35px 30px 15px 30px;
+}
+
+#announcements, #trending {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+    display: grid;
+    gap: 20px 15px;
+    grid-template-rows: max-content;
+    padding: 30px;
+}
+
+.divider {
+    background-color: rgb(219, 221, 231);
+    height: 1px;
+    width: 100%;
+}
+
+#trending {
+    grid-template-columns: max-content 1fr;
+}
+
+.contact-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 55px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 55px;
 }
