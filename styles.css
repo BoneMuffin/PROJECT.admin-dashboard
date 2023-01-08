@@ -141,3 +141,24 @@ input:not(:focus):placeholder-shown {
     padding: 30px;
     row-gap: 25px;
 }
+
+.dashboard-title {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.dashboard-divider {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+#sidebar a {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    color: var(--light-gray);
+    padding-left: 30px;
+    text-decoration: none;
+}
