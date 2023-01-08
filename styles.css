@@ -145,7 +145,7 @@ input:not(:focus):placeholder-shown {
 }
 
 #notifications {
-    background-image: url(media/Icons/bell-ring.png);
+    background-image: url(Media/Icons/bell-ring.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -156,7 +156,7 @@ input:not(:focus):placeholder-shown {
 
 .user-img {
     background-color: var(--dark-grey);
-    background-image: url(media/cheesy-cat.png);
+    background-image: url(Media/cheesy-cat.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 120% 120%;
