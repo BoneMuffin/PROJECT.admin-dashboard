@@ -1,5 +1,9 @@
 # PROJECT.admin-dashboard
+
 Admin dashboard for the Odin project.
+
+## Live preview [here](https://bonemuffin.github.io/PROJECT.admin-dashboard/)
+
 
 ## Built with
 - HTML
@@ -17,5 +21,4 @@ Admin dashboard for the Odin project.
  - Deepened knowledge of CSS Grid properties.
 
  
-## Live preview [here](https://bonemuffin.github.io/PROJECT.admin-dashboard/)
-![](./Media/preview.png)
+
